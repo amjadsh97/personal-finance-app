@@ -1,0 +1,56 @@
+
+.button {
+  padding: 15px;
+  background-color: var(--grey-900);
+  color: white;
+  border-radius: 8px;
+  border:1px solid transparent;
+  transition:background-color 0.4s;
+  /*min-height: 53px;*/
+  /*min-width: 113px;*/
+}
+
+.button > span {
+  line-height:1.5;
+  display: block;
+}
+
+.button.primary:hover {
+  background-color: var(--grey-500);
+}
+
+.button.secondary{
+  background-color: var(--beige-100);
+  color: var(--grey-900);
+}
+
+.button.secondary:hover{
+  background-color: white;
+  border-color: var(--grey-500);
+}
+
+.button.destroy{
+  background-color: var(--red);
+  transition:opacity 0.4s;
+}
+
+.button.destroy:hover{
+  opacity:0.7;
+}
+
+
+.button.tertiary {
+  border:unset;
+  padding:5px;
+  color:var(--grey-500);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+  font-weight: 400;
+  transition:opacity 0.4s;
+}
+
+.button.tertiary:hover {
+  opacity:0.6;
+}
